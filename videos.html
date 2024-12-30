@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/music_gallery.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/lightbox.min.css">
+
+  <link rel="stylesheet" href="./assets/css/videos/videos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>   
+  <title>popup video</title>
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Jazmin Giles</title>
+  <meta name="title" content="Jazmin Giles">
+  <meta name="description" content="This is a photographer portfolio was made by Gail Giles.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+
+</head>
+
+<body class="active" id="top">
+
+  <!-- 
+    -#PRELOADING
+  -->
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/logo1.png" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo1.png" width="40" height="40" alt="Richard home">
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo1.png" width="140" height="40" alt="Richard home" class="img">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/index.html#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#gallery" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#services" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/index.html#contact" class="navbar-link" data-nav-link>Contact us</a>
+          </li>
+
+        </ul>
+
+        <!-- <button class="login-btn">
+          <img src="./assets/images/user.svg" width="21" height="21" alt="user icon">
+
+          <span class="span">Login</span>
+        </button> -->
+
+        <!-- <hr>
+
+        <p class="navbar-title">My Address</p>
+
+        <address class="navbar-text">
+          Farmington, Connecticut
+        </address>
+
+        <p class="navbar-text">
+          Urgent issue? call us at
+          <a href="#" class="contact-link">860-000-0000</a>
+        </p> -->
+
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container2 text-center">
+        <h1 class="title">Jazmin's Best Videos</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-1.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-1">
+                                    <h4>1 - Minuet I from Partita in B flat Major</h4>
+
+            </div>
+
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-2.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-2">
+            
+                    <h4> 2 - Minuet I from Partita in B flat Major</h4>
+                
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-3.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-3">
+                                    <h4>3 - Toccata</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-4.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-4">
+                                    <h4>4 - "Harmonies du soir" (Franz Liszt)</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-5.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-5">
+                                    <h4>5 - Sonata in A flat Major</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-6.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-6">
+                                    <h4>6 - Musette in D Major</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-7.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-7">
+                                    <h4>7 - Baby It's Cold Outside</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-8.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-8">
+                                    <h4>8 - Gershwin's Prelude I</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-9.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-9">
+                                    <h4>9 - Perpetual Commotion</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-10.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-10">
+                                    <h4>10 - Two Gossiping Old Women</h4>
+
+            </div>
+           
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-11.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-11">
+                                    <h4>11 - Sonatina in C Major, Op. 55, No. 1, Kuhlau - Vivace</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-12.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-12">
+                                    <h4> 12 - Le Coucou - Louis-Claude Daquin</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-13.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-13">
+                <h4>13 - TRANSCENDENTAL ETUDE NO. 3 IN F MAJOR</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-14.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-14">
+                                    <h4>14 - Lupin by Beethoven</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-15.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-15">
+                                    <h4>15 - Lupin by Beethoven</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-16.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-16">
+                                    <h4>16 - Lupin by Beethoven</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-17.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-17">
+                                    <h4>17 - Senior Recital</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-18.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-18">
+                                    <h4>18 - Prelude II</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-19.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-19">
+                                    <h4>19 - Hungarian Dance #5 (Brahm)</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-20.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-20">
+                                    <h4>20 - Honor's Recital</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-21.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-21">
+                                    <h4>21 - Chopin - Etude Op 25 No 1</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-22.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-22">
+                                    <h4>22 - Prelude I </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-23.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-23">
+                                    <h4>23 - Ode for So What </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-24.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-24">
+                                    <h4>24 - I Wish</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-25.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-25">
+                                    <h4>25 - Suzuki Camp 2011</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-26.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-26">
+                                    <h4>26 - Suzuki Camp 2011</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-27.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-27">
+                                    <h4>27 - The Cat and the Mouse</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-28.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-28">
+                                    <h4>28 - The Cat and The Mouse  </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-29.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-29">
+                                    <h4>29 - Jazmin plays Herbie</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-30.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-30">
+                                    <h4>30 - The After Party</h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-31.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-31">
+                                    <h4>31 - Sonatina in G Major Winter Recital  </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-32.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-32">
+                                    <h4>32 - Sonatina in C Major, Op. 55, No. 1 </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-33.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-33">
+                                    <h4>33 - Prelude in C Sharp Minor - Rachmaninov </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-34.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-34">
+                                    <h4>34 - Sonatina in F Major II. Rondo (Beethoven) </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-35.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-35">
+                                    <h4>35 - No.7 Gavotte en Rondeau Suite  </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-36.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-36">
+                                    <h4>36 - Love Song  </h4>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/videos/jazmin-37.png" class="img-fluid" alt="">
+                <img src="./assets/images/videos/play-icon.png"  class="play-btn" alt="" data-toggle="modal" data-target="#play-video-37">
+                                    <h4>37 - Rising Pianists Competition  </h4>
+
+            </div>
+            
+        </div>
+
+
+
+
+        
+            
+        <div class="modal fade" id="play-video-1">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/re2jQpKnqco?si=2EV2yg2wMwmA4M3z?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="play-video-2">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hn5-SiNBzis?si=HP-57PZPYTM3yP4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-3">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JaC_pYkXW7E?si=P9CGZGzv9ffLFYVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-4">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FjD1KgXRGmY?si=wIWltQjspcUwAx1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-5">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jIpDeCrTMcw?si=n826vguAbOSqTWvx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-6">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q6qE7ZJtabs?si=LrYTEEAfdk1xRcSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-7">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9lA1eVhi2Zs?si=xq6TYScQpdKXG2L6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-8">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jycIPNsFaRc?si=evnpC9a8p6Y_PKj6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-9">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vpKgSrcDtjE?si=N3H5d4JPrF8pfxbi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-10">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AeW2E5XSzSA?si=2vvhuKYOupS7unLd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-11">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AVdKcnQigeA?si=zO8sqpmLh-JTXsu9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-12">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fic8zZ9p5QI?si=0zNzkAcrxIyACrU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-13">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kZIFUmc0yH0?si=O-BfQgKR10I9pZRB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-14">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DbolHa2jeo8?si=d1Bk5gYFSLfboe_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-15">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dA9OQeyWmrA?si=0KyZDU3p2mlaae0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-16">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_5rBR_QJ7CU?si=7w8ZCr0LkeAS_r6V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-17">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rYMiP3Xypno?si=K3b6e1EG8KyozOCC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-18">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9xJisMtq7T0?si=FnBJ2Uphi1-IvP0F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-19">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vvnFR2F2QkU?si=hEWjXEeHdcPH0oue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-20">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CZ_zBj5xSso?si=LL3jdR_gp6emGqmS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-21">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bHDpwr-b7rE?si=tc8yWpofty_YgDEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-22">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/06hfw0Ie6VQ?si=vVjqeHON5eTiWheq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-23">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcVFRrAUkY0?si=9tkQGBTXAQDFjmFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-24">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SJgzG-SJoKA?si=VGj1e8INTxfGYQqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-25">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VTinSJfpC4M?si=5CEJ_859LYomZfZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-26">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QmNBvmeeHgE?si=C7YargzbJ6NXOVS1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-27">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7pBFJqLgOX8?si=i6Ve3qfh1FDhfxLG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-28">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vTx6WRys18c?si=RaOUFN4rw4Q_F9JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-29">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5xTx5_sqFLY?si=3_VrTv-x6xSqKuya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-30">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XXTaymRm0vY?si=0zLHVu1ft7zIhNNz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-31">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DptI--jo_gI?si=K8BQKcNiDdbIg3Lh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        <div class="modal fade" id="play-video-32">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AVdKcnQigeA?si=l2vIg4QHxhben5ci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        <div class="modal fade" id="play-video-33">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cf7vly4RRMM?si=1wvaJpOkyFgr50-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        <div class="modal fade" id="play-video-34">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cGlUpIrGYgA?si=QLzxwgfT0QM4RfHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        <div class="modal fade" id="play-video-35">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JF1x7hPpDxM?si=WYsiAzisrD0Pfozq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-36">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BvekwpOhRTg?si=2hpCR1DuCYaWmceG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="modal fade" id="play-video-37">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/67fq3qabey4?si=ubIkFBRalIlT6qZv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+
+    </div>
+   
+  </main>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
